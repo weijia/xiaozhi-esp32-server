@@ -51,18 +51,18 @@ fi
 
 # 下载语音识别模型
 echo "下载语音识别模型..."
-if [ "$DOWNLOAD_CMD" = "powershell -Command Invoke-WebRequest -Uri" ]; then
-    $DOWNLOAD_CMD "https://modelscope.cn/models/iic/SenseVoiceSmall/resolve/master/model.pt" $DOWNLOAD_CMD_SUFFIX "models/SenseVoiceSmall/model.pt"
-else
-    $DOWNLOAD_CMD "models/SenseVoiceSmall/model.pt" "https://modelscope.cn/models/iic/SenseVoiceSmall/resolve/master/model.pt"
-fi
+#if [ "$DOWNLOAD_CMD" = "powershell -Command Invoke-WebRequest -Uri" ]; then
+#    $DOWNLOAD_CMD "https://modelscope.cn/models/iic/SenseVoiceSmall/resolve/master/model.pt" $DOWNLOAD_CMD_SUFFIX "models/SenseVoiceSmall/model.pt"
+#else
+#    $DOWNLOAD_CMD "models/SenseVoiceSmall/model.pt" "https://modelscope.cn/models/iic/SenseVoiceSmall/resolve/master/model.pt"
+#fi
 
-if [ $? -ne 0 ]; then
-    echo "${RED}模型下载失败。请手动从以下地址下载：${NC}"
-    echo "1. https://modelscope.cn/models/iic/SenseVoiceSmall/resolve/master/model.pt"
-    echo "2. 百度网盘: https://pan.baidu.com/share/init?surl=QlgM58FHhYv1tFnUT_A8Sg (提取码: qvna)"
-    echo "下载后请将文件放置在 models/SenseVoiceSmall/model.pt"
-fi
+#if [ $? -ne 0 ]; then
+#    echo "${RED}模型下载失败。请手动从以下地址下载：${NC}"
+#    echo "1. https://modelscope.cn/models/iic/SenseVoiceSmall/resolve/master/model.pt"
+#    echo "2. 百度网盘: https://pan.baidu.com/share/init?surl=QlgM58FHhYv1tFnUT_A8Sg (提取码: qvna)"
+#    echo "下载后请将文件放置在 models/SenseVoiceSmall/model.pt"
+#fi
 
 # 下载配置文件
 echo "下载配置文件..."
