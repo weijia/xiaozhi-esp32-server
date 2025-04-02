@@ -74,9 +74,9 @@ echo "下载配置文件..."
 #    $DOWNLOAD_CMD "data/.config.yaml" "https://raw.githubusercontent.com/xinnan-tech/xiaozhi-esp32-server/main/main/xiaozhi-server/config.yaml"
 #fi
 
-cp xiaozhi-esp32-server/docker-compose.yml .
+cp ../xiaozhi-esp32-server/docker-compose.yml .
 mkdir -p data
-cp xiaozhi-esp32-server/config.yaml data/.config.yaml
+cp ../xiaozhi-esp32-server/config.yaml data/.config.yaml
 
 # 检查文件是否存在
 echo "检查文件完整性..."
